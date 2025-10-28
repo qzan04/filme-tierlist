@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unsere Film Tierlist</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Roboto, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      margin: 0;
+      padding: 2rem 1rem 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.5;
+    }
+
+    .page-wrapper {
+      width: 100%;
+      max-width: 1100px;
+      display: grid;
+      gap: 2rem;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0;
+      color: #fff;
+    }
+
+    /* Tierlist layout */
+    .tiers {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .tier-card {
+      border-radius: 1rem;
+      padding: 1rem 1.25rem 1.25rem;
+      background-color: #1e253a;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+      border: 1px solid rgba(148,163,184,0.15);
+    }
+
+    .tier-header {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      margin-bottom: 0.75rem;
+    }
+
+    .film-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .film-list li {
+      background-color: rgba(15,23,42,0.6);
+      border: 1px solid rgba(148,163,184,0.12);
+      padding: 0.6rem 0.8rem;
+      border-radius: 0.6rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .film-name {
+      font-weight: 500;
+      color: #f8fafc;
+    }
+
+    .film-meta {
+      font-size: 0.8rem;
+      color: #808da8;
+    }
+
+    /* History table */
+    .history-card {
+      border-radius: 1rem;
+      padding: 1rem 1.25rem 1.25rem;
+      background-color: #1e253a;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+      border: 1px solid rgba(148,163,184,0.15);
+    }
+
+    .history-card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    thead {
+      color: #cbd5e1;
+      text-align: left;
+      font-weight: 500;
+    }
+
+    th, td {
+      padding: 0.6rem 0.4rem;
+      border-bottom: 1px solid rgba(148,163,184,0.15);
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .tier-badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      background-color: #0f172a;
+      border-radius: 0.5rem;
+      padding: 0.3rem 0.5rem;
+      border: 1px solid rgba(148,163,184,0.3);
+      min-width: 2rem;
+      text-align: center;
+      display: inline-block;
+    }
+
+    footer {
+      text-align: center;
+      color: #475569;
+      font-size: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .tiers {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .tiers {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <h1>Unsere Film Tierlist 🍿</h1>
+    </header>
+
+    <!-- Tier Sections -->
+    <section class="tiers">
+      <!-- S Tier -->
+      <div class="tier-card">
+        <div class="tier-header">S Tier</div>
+        <ul class="film-list">
+          <li>
+            <span class="film-name">Shutter Island (
