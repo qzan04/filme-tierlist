@@ -36,7 +36,6 @@
       color: #fff;
     }
 
-    /* Tierlist layout */
     .tiers {
       display: grid;
       gap: 1rem;
@@ -53,7 +52,6 @@
     .tier-header {
       font-size: 1.5rem;
       font-weight: 700;
-      letter-spacing: -0.05em;
       margin-bottom: 0.75rem;
     }
 
@@ -86,7 +84,6 @@
       color: #808da8;
     }
 
-    /* History table */
     .history-card {
       border-radius: 1rem;
       padding: 1rem 1.25rem 1.25rem;
@@ -165,11 +162,93 @@
       <h1>Unsere Film Tierlist 🍿</h1>
     </header>
 
-    <!-- Tier Sections -->
     <section class="tiers">
       <!-- S Tier -->
       <div class="tier-card">
         <div class="tier-header">S Tier</div>
         <ul class="film-list">
-          <li>
-            <span class="film-name">Shutter Island (
+          <li><span class="film-name">Beispiel S1</span><span class="film-meta">ausgewählt von ...</span></li>
+          <li><span class="film-name">Beispiel S2</span><span class="film-meta">ausgewählt von ...</span></li>
+        </ul>
+      </div>
+
+      <!-- A Tier -->
+      <div class="tier-card">
+        <div class="tier-header">A Tier</div>
+        <ul class="film-list">
+          <li><span class="film-name">Beispiel A1</span><span class="film-meta">ausgewählt von ...</span></li>
+          <li><span class="film-name">Beispiel A2</span><span class="film-meta">ausgewählt von ...</span></li>
+        </ul>
+      </div>
+
+      <!-- B Tier -->
+      <div class="tier-card">
+        <div class="tier-header">B Tier</div>
+        <ul class="film-list">
+          <li><span class="film-name">Beispiel B1</span><span class="film-meta">ausgewählt von ...</span></li>
+          <li><span class="film-name">Beispiel B2</span><span class="film-meta">ausgewählt von ...</span></li>
+        </ul>
+      </div>
+
+      <!-- C Tier -->
+      <div class="tier-card">
+        <div class="tier-header">C Tier</div>
+        <ul class="film-list">
+          <li><span class="film-name">Beispiel C1</span><span class="film-meta">ausgewählt von ...</span></li>
+          <li><span class="film-name">Beispiel C2</span><span class="film-meta">ausgewählt von ...</span></li>
+        </ul>
+      </div>
+
+      <!-- D Tier -->
+      <div class="tier-card">
+        <div class="tier-header">D Tier</div>
+        <ul class="film-list">
+          <li><span class="film-name">Beispiel D1</span><span class="film-meta">ausgewählt von ...</span></li>
+          <li><span class="film-name">Beispiel D2</span><span class="film-meta">ausgewählt von ...</span></li>
+        </ul>
+      </div>
+
+      <!-- F Tier -->
+      <div class="tier-card">
+        <div class="tier-header">F Tier</div>
+        <ul class="film-list">
+          <li><span class="film-name">Beispiel F1</span><span class="film-meta">ausgewählt von ...</span></li>
+          <li><span class="film-name">Beispiel F2</span><span class="film-meta">ausgewählt von ...</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="history-card">
+      <h2>Was haben wir schon geguckt?</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Datum</th>
+            <th>Film</th>
+            <th>Ausgewählt von</th>
+            <th>Tier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>–</td><td>Beispiel S1</td><td>–</td><td><span class="tier-badge">S</span></td></tr>
+          <tr><td>–</td><td>Beispiel S2</td><td>–</td><td><span class="tier-badge">S</span></td></tr>
+          <tr><td>–</td><td>Beispiel A1</td><td>–</td><td><span class="tier-badge">A</span></td></tr>
+          <tr><td>–</td><td>Beispiel A2</td><td>–</td><td><span class="tier-badge">A</span></td></tr>
+          <tr><td>–</td><td>Beispiel B1</td><td>–</td><td><span class="tier-badge">B</span></td></tr>
+          <tr><td>–</td><td>Beispiel B2</td><td>–</td><td><span class="tier-badge">B</span></td></tr>
+          <tr><td>–</td><td>Beispiel C1</td><td>–</td><td><span class="tier-badge">C</span></td></tr>
+          <tr><td>–</td><td>Beispiel C2</td><td>–</td><td><span class="tier-badge">C</span></td></tr>
+          <tr><td>–</td><td>Beispiel D1</td><td>–</td><td><span class="tier-badge">D</span></td></tr>
+          <tr><td>–</td><td>Beispiel D2</td><td>–</td><td><span class="tier-badge">D</span></td></tr>
+          <tr><td>–</td><td>Beispiel F1</td><td>–</td><td><span class="tier-badge">F</span></td></tr>
+          <tr><td>–</td><td>Beispiel F2</td><td>–</td><td><span class="tier-badge">F</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>Zum Updaten: index.html im Repo editieren und committen.</p>
+    </footer>
+  </div>
+</body>
+</html>
